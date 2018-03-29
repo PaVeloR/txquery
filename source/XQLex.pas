@@ -809,9 +809,7 @@ yyt : array [1..yyntrans] of YYTrec = (
   ( cc: [ ']' ]; s: 33),
 { 33: }
 { 34: }
-  //( cc: [ #1..',','.'..#255 ];{$IFDEF UNICODE}uc: CONST_XQ_ucIsLetter;{$ENDIF} s: 34),
   ( cc: [ #1..#9,#$B..#255 ];{$IFDEF UNICODE}uc: CONST_XQ_ucIsLetter;{$ENDIF} s: 34),
-  //( cc: [ '-' ]; s: 51),
   ( cc: [ #$A ]; s: 53),
 { 35: }
   ( cc: [ '.' ]; s: 36),
